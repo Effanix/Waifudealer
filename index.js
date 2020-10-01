@@ -9,7 +9,7 @@ const token = "";
 
 const PREFIX = "*";
 
-var version = "1.0.3";
+var version = "1.0.6";
 
 bot.on("ready", () => {
   console.log("This bot is online! " + version);
@@ -25,12 +25,18 @@ bot.on("message", message => {
       break;
 
     case "help":
-      message.channel.send("[ ping - bot answers with pong! ] [ introduce - bot will introduce itself ] [ image dog - bot will respond with an image of a dog ]");
+      message.channel.send("[ping - bot answers with pong!] [introduce - bot will introduce itself] [roast - bot will roast you, there is only one roast becouse im not creative...] [disclaimer - bot will give a disclaimer for a joke that you are about to say]");
       break;
 
       break;
     case "introduce":
       message.channel.send("Hello my name is Effanix but I'm not as cool as the real Effanix, I was built by Effanix, a professional otaku");
+      break;
+    case "roast":
+      message.channel.send("If you had two less braincells you would have as many as a plant")
+      break;
+    case "disclaimer":
+      message.channel.send("Everything I'm about to say is a joke, do not take any of this serious, pls don't cancell me")
       break;
     }
 });
