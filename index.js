@@ -25,7 +25,7 @@ bot.on("message", message => {
       break;
 
     case "help":
-      message.channel.send("[ping - bot answers with pong!] [introduce - bot will introduce itself] [image dog - bot will respond with an image of a dog");
+      message.channel.send("[ ping - bot answers with pong! ] [ introduce - bot will introduce itself ] [ image dog - bot will respond with an image of a dog ]");
       break;
 
       break;
