@@ -25,12 +25,9 @@ bot.on("message", message => {
       break;
 
     case "help":
-      message.channel.send("ping - bot answers with pong! p kyano - bot will answer my spotify playlist introduce - bot will introduce itself");
+      message.channel.send("[ping - bot answers with pong!] [introduce - bot will introduce itself] [image dog - bot will respond with an image of a dog");
       break;
 
-      break;
-    case "p kyano":
-      message.channel.send("-p https://open.spotify.com/playlist/5TJ6SGAGUg23VHCmcg82Ue?si=AdaO4oYgSkGtnn271-Equw")
       break;
     case "introduce":
       message.channel.send("Hello my name is Effanix but I'm not as cool as the real Effanix, I was built by Effanix, a professional otaku");
