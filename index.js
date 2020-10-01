@@ -19,32 +19,25 @@ bot.on("message", message => {
   let args = message.content.substring(PREFIX.length).split(" ");
 
   switch (args[0]) {
-    case "waifu":
-      waifu(message);
-      break;
-
+    
     case "ping":
       message.channel.send("pong!");
       break;
 
-    case "best":
-      message.channel.send("My master @Kyano#5220 is the best ofcourse!");
+    case "help":
+      message.channel.send("ping - bot answers with pong!",
+      "p kyano - bot will answer my spotify playlist",
+      "introduce - bot will introduce itself");
       break;
 
-    case "neko":
-      neko(message);
-      break;
-
-    case "foxgirl":
-      foxgirl(message);
-      break;
-
-    case "hentai":
-      message.channel.send("Pervert! Ok I'm calling the FBI!");
       break;
     case "p kyano":
       message.channel.send("-p https://open.spotify.com/playlist/5TJ6SGAGUg23VHCmcg82Ue?si=AdaO4oYgSkGtnn271-Equw")
-  }
+      break;
+    case "introduce":
+      message.channel.send("Hello my name is Effanix but I'm not as cool as the real Effanix, I was built by Effanix, a professional otaku");
+      break;
+    }
 });
 
 bot.on("message", function(message){
@@ -89,106 +82,7 @@ request(options, function(error, response, responseBody) {
 });
 }
 
-function waifu(message) {
-  var options = {
-    url: "http://results.dogpile.com/serp?qc=images&q=" + "Anime Girls",
-    method: "GET",
-    headers: {
-      Accept: "text/html",
-      "User-Agent": "Chrome"
-    }
-  };
 
-  request(options, function(error, response, responseBody) {
-    if (error) {
-      return;
-    }
 
-    $ = cheerio.load(responseBody);
-
-    var links = $(".image a.link");
-
-    var urls = new Array(links.length)
-      .fill(0)
-      .map((v, i) => links.eq(i).attr("href"));
-
-    console.log(urls);
-
-    if (!urls.length) {
-      return;
-    }
-
-    // Send result
-    message.channel.send(urls[Math.floor(Math.random() * urls.length)]);
-  });
-}
-
-function neko(message) {
-  var options = {
-    url: "http://results.dogpile.com/serp?qc=images&q=" + "neko",
-    method: "GET",
-    headers: {
-      Accept: "text/html",
-      "User-Agent": "Chrome"
-    }
-  };
-
-  request(options, function(error, response, responseBody) {
-    if (error) {
-      return;
-    }
-
-    $ = cheerio.load(responseBody);
-
-    var links = $(".image a.link");
-
-    var urls = new Array(links.length)
-      .fill(0)
-      .map((v, i) => links.eq(i).attr("href"));
-
-    console.log(urls);
-
-    if (!urls.length) {
-      return;
-    }
-
-    // Send result
-    message.channel.send(urls[Math.floor(Math.random() * urls.length)]);
-  });
-}
-
-function foxgirl(message) {
-  var options = {
-    url: "http://results.dogpile.com/serp?qc=images&q=" + "foxgirl",
-    method: "GET",
-    headers: {
-      Accept: "text/html",
-      "User-Agent": "Chrome"
-    }
-  };
-
-  request(options, function(error, response, responseBody) {
-    if (error) {
-      return;
-    }
-
-    $ = cheerio.load(responseBody);
-
-    var links = $(".image a.link");
-
-    var urls = new Array(links.length)
-      .fill(0)
-      .map((v, i) => links.eq(i).attr("href"));
-
-    console.log(urls);
-
-    if (!urls.length) {
-      return;
-    }
-
-    // Send result
-    message.channel.send(urls[Math.floor(Math.random() * urls.length)]);
-  });
-}
 
 bot.login(process.env.TOKEN);
