@@ -25,9 +25,7 @@ bot.on("message", message => {
       break;
 
     case "help":
-      message.channel.send("ping - bot answers with pong!",
-      "p kyano - bot will answer my spotify playlist",
-      "introduce - bot will introduce itself");
+      message.channel.send("ping - bot answers with pong! p kyano - bot will answer my spotify playlist introduce - bot will introduce itself");
       break;
 
       break;
