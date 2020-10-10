@@ -25,7 +25,7 @@ bot.on("message", message => {
       break;
 
     case "help":
-      message.channel.send("[ ping - bot answers with pong! ] [ introduce - bot will introduce itself ] [ roast - bot will roast you, there is only one roast becouse im not creative... ] [ disclaimer - bot will give a disclaimer for a joke that you are about to say ]");
+      message.channel.send("[ ping - bot answers with pong! ] [ introduce - bot will introduce itself ] [ roast - bot will roast you, there is only one roast becouse im not creative... ] [ disclaimer - bot will give a disclaimer for a joke that you are about to say ] [ laugh - bot will laugh at your shitty joke, ur a pathetic piece of shit if you need a bot to do this... I feel bad for you  ] ");
       break;
 
       break;
