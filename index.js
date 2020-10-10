@@ -38,6 +38,9 @@ bot.on("message", message => {
     case "disclaimer":
       message.channel.send("Everything I'm about to say is a joke, do not take any of this serious, pls don't cancell me")
       break;
+    case "laugh":
+      message.channel.send("LMAO hahahahahahaha dead")
+      break;
     }
 });
 
