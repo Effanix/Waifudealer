@@ -9,7 +9,7 @@ const token = "";
 
 const PREFIX = "*";
 
-var version = "1.0.6";
+var version = "1.0.7";
 
 bot.on("ready", () => {
   console.log("This bot is online! " + version);
@@ -46,6 +46,9 @@ bot.on("message", message => {
       break;
     case "joke":
       message.channel.send("You fucking life is a joke, ur such a fucking losers, you should think of killing yourself (for legal reasons thas a joke)")
+      break;
+    case "version":
+      message.channel.send("the current version is",version)
       break;
     }
 });
