@@ -41,6 +41,12 @@ bot.on("message", message => {
     case "laugh":
       message.channel.send("LMAO hahahahahahaha dead")
       break;
+    case "help me im getting kidnapped":
+      message.channel.send("fucking loser get fucked")
+      break;
+    case "joke":
+      message.channel.send("You fucking life is a joke, ur such a fucking losers, you should think of killing yourself (for legal reasons thas a joke)")
+      break;
     }
 });
 
