@@ -48,7 +48,7 @@ bot.on("message", message => {
       message.channel.send("You fucking life is a joke, ur such a fucking losers, you should think of killing yourself (for legal reasons thas a joke)")
       break;    
     case "version":
-      message.channel.send("the current version is" (version))
+      message.channel.send("the current version is 1.0.7")
       break;
     }
 });
