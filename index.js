@@ -24,22 +24,16 @@ bot.on("message", message => {
       message.channel.send("pong!");
       break;
       case "help":
-        message.channel.send("[ ping ] [ introduce ] [ roast ] [ disclaimer ] [ laugh ] [ help me im getting kidnapped ] [ joke ] [ version ] ");
+        message.channel.send("[ ping ] [ introduce ] [ help me im getting kidnapped ] [ joke ] [ version ] ");
         break;
     case "introduce":
-      message.channel.send("Hello my name is Effanix but I'm not as cool as the real Effanix, I was built by Effanix, a professional otaku");
-      break;
-    case "roast":
-      message.channel.send("If you had two less braincells you would have as many as a plant")
-      break;
-    case "disclaimer":
-      message.channel.send("Everything I'm about to say is a joke, do not take any of this serious, pls don't cancell me")
+      message.channel.send("Hello my name is Effanix but I'm not as cool as the real Effanix");
       break;
     case "help me im getting kidnapped":
       message.channel.send("fucking loser ur so stupid")
       break;
     case "joke":
-      message.channel.send("You fucking life is a joke, ur such a fucking losers, you should think of killing yourself (for legal reasons thas a joke)")
+      message.channel.send("You fucking life is a joke, ur such a fucking loser")
       break;
     case "version":
       message.channel.send("WaifuDealer's version is " + version)
