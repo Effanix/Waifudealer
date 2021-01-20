@@ -9,7 +9,7 @@ const token = "";
 
 const PREFIX = "*";
 
-var version = "1.0.9";
+var version = "1.1.0";
 
 bot.on("ready", () => {
   console.log("This bot is online! " + version);
