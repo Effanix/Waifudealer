@@ -13,7 +13,6 @@ var version = "1.0.6";
 
 bot.on("ready", () => {
   console.log("This bot is online! " + version);
-  MessageChannel("This bot is online! " + version);
 });
 
 bot.on("message", message => {
@@ -42,8 +41,8 @@ bot.on("message", message => {
     case "joke":
       message.channel.send("You fucking life is a joke, ur such a fucking losers, you should think of killing yourself (for legal reasons thas a joke)")
       break;
-    case "racism":
-      message.channel.send("racism is fake, there is only one race, the human race")
+    case "version":
+      message.channel.send("WaifuDealer's version is " + version)
       break;
     }
 });
