@@ -38,15 +38,11 @@ bot.on("message", message => {
     case "version":
       message.channel.send("WaifuDealer's version is " + version)
       break;
+    case "vibe":
+      message.channel.send("https://tenor.com/view/the-simpsons-bart-vibe-groove-dance-gif-5472520")
+      break;
     }
 });
-
-bot.on("message", function(messagge){
-  var parts = message.content.split(" ");
-  if(parts[0] === "vibe")
-    message.channel.send("https://tenor.com/view/the-simpsons-bart-vibe-groove-dance-gif-5472520")
-    break;
-})
 
 bot.on("message", function(message){
   var parts = message.content.split(" ");
