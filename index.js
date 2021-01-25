@@ -9,7 +9,7 @@ const token = "";
 
 const PREFIX = "*";
 
-var version = "1.1.0";
+var version = "1.0.6";
 
 bot.on("ready", () => {
   console.log("This bot is online! " + version);
@@ -23,23 +23,23 @@ bot.on("message", message => {
     case "ping":
       message.channel.send("pong!");
       break;
-      case "help":
-        message.channel.send("[ ping ] [ introduce ] [ help me im getting kidnapped ] [ joke ] [ version ] ");
-        break;
+    case "help":
+      message.channel.send("[ ping - bot answers with pong! ] [ introduce - bot will introduce itself ] [ roast - bot will roast you, there is only one roast becouse im not creative... ] [ disclaimer - bot will give a disclaimer for a joke that you are about to say ]");
+      break;
     case "introduce":
-      message.channel.send("Hello my name is Effanix but I'm not as cool as the real Effanix");
+      message.channel.send("Hello my name is Effanix but I'm not as cool as the real Effanix, I was built by Effanix, a professional otaku");
+      break;
+    case "roast":
+      message.channel.send("If you had two less braincells you would have as many as a plant")
+      break;
+    case "disclaimer":
+      message.channel.send("Everything I'm about to say is a joke, do not take any of this serious, pls don't cancell me")
       break;
     case "help me im getting kidnapped":
       message.channel.send("fucking loser ur so stupid")
       break;
     case "joke":
       message.channel.send("You fucking life is a joke, ur such a fucking loser")
-      break;
-    case "version":
-      message.channel.send("WaifuDealer's version is " + version)
-      break;
-    case "vibe":
-      message.channel.send("https://tenor.com/view/the-simpsons-bart-vibe-groove-dance-gif-5472520")
       break;
     }
 });
