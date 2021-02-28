@@ -26,20 +26,14 @@ bot.on("message", message => {
     case "help":
       message.channel.send("[ ping - bot answers with pong! ] [ introduce - bot will introduce itself ] [ roast - bot will roast you, there is only one roast becouse im not creative... ] [ disclaimer - bot will give a disclaimer for a joke that you are about to say ]");
       break;
-    case "introduce":
-      message.channel.send("Hello my name is Effanix but I'm not as cool as the real Effanix, I was built by Effanix, a professional otaku");
+    case "test":
+      message.channel.send("Bot is running!");
       break;
-    case "roast":
-      message.channel.send("If you had two less braincells you would have as many as a plant")
+    case "":
+      message.channel.send("")
       break;
-    case "disclaimer":
-      message.channel.send("Everything I'm about to say is a joke, do not take any of this serious, pls don't cancell me")
-      break;
-    case "help me im getting kidnapped":
-      message.channel.send("fucking loser ur so stupid")
-      break;
-    case "joke":
-      message.channel.send("You fucking life is a joke, ur such a fucking loser")
+    case "":
+      message.channel.send("")
       break;
     }
 });
